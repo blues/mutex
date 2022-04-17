@@ -9,6 +9,7 @@ import (
 )
 
 type Mutex struct {
+	Foo  string
 	Kind string
 	m    sync.Mutex
 }
