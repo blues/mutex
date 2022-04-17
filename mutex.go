@@ -9,8 +9,7 @@ import (
 )
 
 type Mutex struct {
-	Foo  string
-	Kind string
+	Type string
 	m    sync.Mutex
 }
 
@@ -23,7 +22,7 @@ func (m *Mutex) Unlock() {
 }
 
 type RWMutex struct {
-	Kind string
+	Type string
 	m    sync.RWMutex
 }
 

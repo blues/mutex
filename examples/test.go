@@ -10,8 +10,8 @@ import (
 	"github.com/blues/mutex"
 )
 
-var outerLock = mutex.Mutex{"Foo": "testMutexOuter"}
-var innerLock = mutex.Mutex{"Kind": "testMutexInner"}
+var outerLock = mutex.Mutex{Type: "Outer"}
+var innerLock = mutex.Mutex{Type: "Inner"}
 
 func main() {
 	outerLock.Lock()
