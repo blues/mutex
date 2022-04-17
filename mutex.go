@@ -9,8 +9,8 @@ import (
 )
 
 type Mutex struct {
-	Class string
-	m     sync.Mutex
+	Kind string
+	m    sync.Mutex
 }
 
 func (m *Mutex) Lock() {
@@ -22,8 +22,8 @@ func (m *Mutex) Unlock() {
 }
 
 type RWMutex struct {
-	Class string
-	m     sync.RWMutex
+	Kind string
+	m    sync.RWMutex
 }
 
 func (m *RWMutex) Lock() {
