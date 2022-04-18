@@ -37,7 +37,7 @@ type MutexCallbacks struct {
 var mcb *MutexCallbacks
 
 // Method by which mutex handlers can be inserted
-func MutexRegisterHandlers(mcbnew *MutexCallbacks) {
+func RegisterHandlers(mcbnew *MutexCallbacks) {
 	mcb = mcbnew
 }
 
